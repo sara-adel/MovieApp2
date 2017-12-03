@@ -72,7 +72,8 @@ public class MovieDBController {
     }
 
     public boolean deleteMovie(String rowId) {
-        boolean delete = db.delete(MovieContract.FavouriteEntry.TABLE_NAME, MovieContract.FavouriteEntry.COLUMN_MOVIE_ID +
+        boolean delete = db.delete(MovieContract.FavouriteEntry.TABLE_NAME,
+                MovieContract.FavouriteEntry.COLUMN_MOVIE_ID +
                 "=" + rowId, null) > 0;
         return delete;
     }

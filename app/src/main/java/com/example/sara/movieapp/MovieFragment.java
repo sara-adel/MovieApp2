@@ -69,8 +69,9 @@ public class MovieFragment extends Fragment {
                     movieAdapter.add(movieFav);
                 }
                 movieAdapter.notifyDataSetChanged();
-            }else {}
+            }else {
 
+            }
         }
         return super.onOptionsItemSelected(item);
     }
